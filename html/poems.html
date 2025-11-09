@@ -6,6 +6,19 @@
     <title>Random - magicBubbles</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* Place gif to the right of links on wide screens (same helper used in blog.html) */
+        .blogs-row{display:flex;gap:90px;align-items:flex-start;margin-top:10px;width:100%}
+        .blog-links{flex:1;min-width:0}
+        .section-with-cart{flex:0 0 320px;margin-left:auto;padding-left:20px}
+    /* control gif size as percentage of its column (change 70% -> 60% if you prefer) */
+    .section-with-cart img{width:100%;max-width:none;height:auto;display:block;}
+        @media (max-width:768px){
+            .blogs-row{flex-direction:column}
+            .section-with-cart{flex:0 0 auto;margin-left:0;padding-left:0; gap: 70px;}
+            .section-with-cart img{max-width:100%}
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -26,23 +39,29 @@
                         <p style="font-family: 'Pacifico', cursive; font-size: 40px; margin-top: 40px;"> ᥫ᭡.ִֶָ𓂃bubble writes...</p>
 
 
-                            <p style="font-family: 'Josefin Sans', sans-serif; font-size: 19px; line-height: 1.4; text-decoration: none;">
-                                 <a href="../poem-assets/good-morning.png">· I sent you a paper plane</a> <br>
-                                <a href="../poem-assets/i-cant-choose.png">· I couldn't choose</a> <br>
-                                <a href="../poem-assets/if-i-should-have-your-heart.png">· If I should have your heart </a><br>
-                                <a href="../poem-assets/cute-wishes.png">· Sprinkles of Good Luck</a> <br>
-                                <a href="../poem-assets/timeless.jpg">· Timeless </a><br><br>
-                                <a href="../poem-assets/cookies-n-wine.png">· If fate permits</a> <br>
-                                <a href="../poem-assets/for-rehana.jpg">· For Rehana</a> <br>
-                                <a href="../poem-assets/for-stornity.png">· For Stornity</a> <br>
-                                <a href="../poem-assets/Rise.png">· Rise</a> <br>
-                                <a href="../poem-assets/hiding-2.png">· What the mirror sees</a> <br>
-                                <a href="../poem-assets/short.png">· Flow</a> <br>
-                                <a href="../poem-assets/mood.png">· Mood (28-08-25)</a> <br>
-                                <a href="../poem-assets/llm-prose.png">· AI and human   </a> <br>
-                        
-                                <br><br>
-                            </p>
+                            <div class="blogs-row">
+                                <div class="blog-links">
+                                    <p style="font-family: 'Josefin Sans', sans-serif; font-size: 19px; line-height: 1.4; text-decoration: none; margin:0 0 8px 0;">
+                                         <a href="../poem-assets/good-morning.png">· I sent you a paper plane</a> <br>
+                                        <a href="../poem-assets/i-cant-choose.png">· I couldn't choose</a> <br>
+                                        <a href="../poem-assets/if-i-should-have-your-heart.png">· If I should have your heart </a><br>
+                                        <a href="../poem-assets/cute-wishes.png">· Sprinkles of Good Luck</a> <br>
+                                        <a href="../poem-assets/timeless.jpg">· Timeless </a><br><br>
+                                        <a href="../poem-assets/cookies-n-wine.png">· If fate permits</a> <br>
+                                        <a href="../poem-assets/for-rehana.jpg">· For Rehana</a> <br>
+                                        <a href="../poem-assets/for-stornity.png">· For Stornity</a> <br>
+                                        <a href="../poem-assets/Rise.png">· Rise</a> <br>
+                                        <a href="../poem-assets/hiding-2.png">· What the mirror sees</a> <br>
+                                        <a href="../poem-assets/short.png">· Flow</a> <br>
+                                        <a href="../poem-assets/mood.png">· Mood (28-08-25)</a> <br>
+                                        <a href="../poem-assets/llm-prose.png">· ai and humans   </a> <br>
+                                    </p>
+                                </div>
+                                <div class="section-with-cart">
+                                    <img src="../images/heart_love.gif" alt="panda no" class="heart-gif">
+                                </div>
+                            </div>
+                            
 
               
                     
