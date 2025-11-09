@@ -1,0 +1,242 @@
+/* Blog Post Template Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: white;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 650px; /* Same as index.html */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    width: 100%; /* Full width of the container */
+    border: 0px 0px 5px 0px solid #0f0e0e;
+}
+
+.navbar_title {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    gap: 10px; /* Add space between the GIF and text */
+}
+
+.navbar_title a {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(21, 21, 21);
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar_menu a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(18, 17, 17);
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between menu items */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.navbar_menu a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.bubbles-png {
+    width: 59px; /* Adjust width for the star icon */
+    height: 59px; /* Adjust height for the star icon */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0; /* Remove auto centering */
+}
+
+/* Blog Post Content */
+.blog-post-container {
+    max-width: 650px; /* Match navbar width */
+    margin: 40px auto;
+    padding: 0;
+}
+
+.blog-post-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.blog-post-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.blog-post-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #757575;
+    margin-bottom: 32px;
+}
+
+/* Blog paragraph styles */
+.blog-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #242424;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.blog-text-image {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.0;
+    color: #242424;
+    margin-bottom: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.blog-text-italic {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #242424;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.blog-text-large {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #242424;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.blog-text-medium {
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    line-height: 1.6;
+    color: #242424;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+
+/* Blog content */
+.blog-post-content {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #242424;
+}
+
+.blog-post-content p {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.blog-post-content strong {
+    font-weight: 600;
+}
+
+.blog-post-content em {
+    font-style: italic;
+}
+
+/* Centered text */
+.centered-text {
+    font-style: italic;
+    margin: 30px 0;
+}
+
+/* Section divider */
+.section-divider {
+    margin: 40px 0;
+    font-size: 24px;
+}
+
+/* Medium-style quote block */
+.blog-quote {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #242424;
+    font-style: italic;
+    margin: 32px 0;
+    padding-left: 24px;
+    border-left: 3px solid #242424;
+}
+
+
+.footer {
+    margin-top: 80px; /* Add spacing above the footer */
+    padding-bottom: 100px; /* Add 100px space at the bottom of the page */
+    text-align: center; /* Center align the footer content */
+}
+
+.social-icons {
+    display: flex; /* Align icons horizontally */
+    justify-content: center; /* Center align icons */
+    gap: 22px; /* Add space between icons */
+    margin-top: 120px; 
+}
+
+.social-icon {
+    width: 26px; /* Fixed width for icons */
+    height: 26px; /* Fixed height for icons */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Copyright text */
+.copyright-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    margin-top: 20px;
+    width: auto; /* override width:100% */
+    padding-left: 0; /* remove left padding */
+    padding-bottom: 40px;
+}
+
+.flexbox .copyright-text {
+    text-align: center;
+    width: auto;
+    padding-left: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    .navbar_menu a {
+        margin-left: 10px;
+    }
+
+    .blog-post-title {
+        font-size: 32px;
+    }
+
+    .blog-post-content {
+        font-size: 17px;
+    }
+}

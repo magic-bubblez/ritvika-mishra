@@ -1,12 +1,12 @@
 /* Simple blog page styles - matching anime.html structure */
 .blog-body {
-    background-color: #040a2a; /* Royal dark blue */
+    background-color: #ffffff; 
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'SF Mono', monospace;
 }
-
+        
 .simple-header {
     padding: 30px 60px;
 }
@@ -15,29 +15,29 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-left: 50px;
+    margin-left: 45px;
 }
 
 .bubbles-png {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.3));
 }
 
 .logo-section a {
-    font-size: 22px;
-    color: rgb(255, 247, 247);
+    font-size: 20px;
+    color: rgb(28, 27, 27);
     font-family: 'Pacifico', cursive;
     font-weight: 600;
 }
 
 .logo-section a:hover {
-    color: #fa8460;
+    color: #543025;
     transition: color 0.3s ease;
 }
 
 .blog-main {
-    padding: 60px;
+    padding: 40px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -53,7 +53,7 @@
 
 .content-layout {
     display: flex;
-    gap: 60px;
+    gap: 40px;
     align-items: flex-start;
 }
 
@@ -68,7 +68,7 @@
 .list-section h2 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #ccc;
+    color: #1a1a1a;
 }
 
 .list-section p {

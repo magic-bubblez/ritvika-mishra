@@ -22,6 +22,7 @@ body {
     align-items: center;
     padding: 10px 5px;
     width: 100%; /* Full width of the container */
+    /* border-bottom: 1px solid #424242; /* Thin underline for separation */
 }
 
 .navbar_title {
@@ -40,7 +41,7 @@ body {
 
 .navbar_menu a {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
     color: rgb(18, 17, 17);
     text-decoration: none; /* Remove underline */
@@ -69,7 +70,7 @@ body {
 }
 
 .navbar-right nav ul li {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: rgb(18, 17, 17);
@@ -294,7 +295,7 @@ body {
     .section-with-cart {
         flex-direction: column; /* Stack text and cart vertically */
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
     
     .section-text {
