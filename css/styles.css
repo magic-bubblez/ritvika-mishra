@@ -40,7 +40,7 @@ body {
 }
 
 .navbar_menu a {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 19px;
     font-weight: 400;
     color: rgb(18, 17, 17);
@@ -121,8 +121,8 @@ body {
 }
 
 .panda-no-gif {
-    max-width: 330px; /* Maximum size on large screens */
-    width: 80%; /* Scale down on smaller screens */
+   
+    width: 44%; /* Scale down on smaller screens */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure it behaves as a block element */
     margin: 0 auto 15px auto; /* Center and add space below */
@@ -160,7 +160,7 @@ body {
 .cart-container {
     display: flex; /* Align items horizontally */
     justify-content: flex-end; /* Align the GIF to the right */
-    width: 100%; /* Ensure the container spans the full width */
+    width: 120%; /* Ensure the container spans the full width */
 }
 
 .section-with-cart {
@@ -177,10 +177,11 @@ body {
 
 .cart-gif {
     margin-left: auto;
+    margin-right: -30px;
     max-width: 210px; /* Maximum size on large screens */
     width: 100%; /* Scale with container */
     height: auto; /* Maintain aspect ratio */
-    margin-top: 40px;
+    margin-top: 20px;
     display: block; /* Ensure it behaves as a block element */
 }
 
