@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/works", "destination": "/html/work.html" },
+    { "source": "/blogs", "destination": "/html/blog.html" },
+    { "source": "/random", "destination": "/html/random.html" }
+  ]
+}

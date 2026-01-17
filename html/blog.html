@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random - magicBubbles</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Josefin+Sans&display=swap" rel="stylesheet">
-    <style>
-        /* Small helper styles for blog layout: place gif to the right of links on wide screens */
-        .blogs-row{display:flex;gap:50px;align-items:flex-start;margin-top:10px;width:100%}
-        .blog-links{flex:1;min-width:0}
-        /* push the image column to the right edge of the row/container */
-        .section-with-cart{flex:0 0 320px;margin-left:auto;padding-left:20px;margin-right:-150px;}
-        /* cap gif width so long titles don't wrap; it will scale inside the 320px column */
-        .section-with-cart img{max-width:90%;height:auto;display:block}
-        @media (max-width:768px){
-            .blogs-row{flex-direction:column}
-            .section-with-cart{flex:0 0 auto;margin-left:0;padding-left:0;margin-right:0;}
-            .section-with-cart img{max-width:100%}
-        }
-    </style>
+    <title>bubbles' blog</title>
+    <link rel="stylesheet" href="../css/minimal-blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header class="navbar">
-            <div class="navbar_title">
+    <div class="blog-container">
+        <header>
+            <div class="site-title">
                 <img src="../images/bubbles.png" alt="Bubbles" class="bubbles-png">
-                <a href="../index.html">magicBubbles</a>
+                <a href="../index.html"
+                    style="font-family: 'Pacifico', cursive; color:rgb(255, 244, 244)">magicBubbles</a>
             </div>
-            <div class="navbar_menu">
-                <a href="work.html">Works</a>
-                <a href="blog.html">Blogs</a>
-                <a href="random.html">Random</a>
-            </div>
+            <nav>
+                <a href="blog.html">Blog</a>
+            </nav>
         </header>
+
         <main>
-            <div class="content">
-                
-                        <p style="font-family: 'Pacifico', cursive; font-size: 50px; margin-top: 40px; margin-bottom: 30px">Blogs ✎ᝰ.</p>
+            <p style="margin-bottom: 2rem; font-style: italic;">where i dump my brain contents ✎ᝰ.</p>
 
+            <ul class="blog-list">
+                <!-- AUTOMATED_BLOGS_START -->
 
-                            <div class="blogs-row">
-                                <div class="blog-links">
-                                    <p style="font-family: 'Inter', sans-serif; font-size: 19px; line-height: 1.4; margin:0 0 8px 0;">
-                                        &gt; <a href="https://medium.com/@ritvika780/what-it-takes-to-build-a-programming-language-60ebe8d84078">What it takes to build a Programming Language [too lazy to shift this one from medium]</a><br><br>
-                                        &gt; <a href="../blogs/hot-or-not.html">How to build a "Hot or Not" for GitHub</a><br>
-                                        &gt; <a href="../blogs/sweet_little_things.html">Sweet Little Things</a><br>
-                                    </p>
-                                </div>
-                                <div class="section-with-cart">
-                                    <img src="../images/work_love.gif" alt="meow writing">
-                                </div>
-                            </div>
+                <li class="blog-item">
+                    <span class="blog-date">2026-01-16</span>
+                    <span class="blog-title"><a href="https://magic-bubblez.bearblog.dev/why-use-an-artifact-manager/"
+                            target="_blank">why use an artifact manager? (butterflies, drifts and entropy)</a></span>
+                </li>
 
-              
-                    
-                    <!--<div style="display: flex; justify-content: center; gap: 80px; margin-top: 50px; margin-bottom: 5px;">
+                <li class="blog-item">
+                    <span class="blog-date">2025-10-22</span>
+                    <span class="blog-title"><a
+                            href="https://medium.com/@ritvika780/what-it-takes-to-build-a-programming-language-60ebe8d84078?source=rss-043a4f41b145------2"
+                            target="_blank">What it takes to build a Programming Language?</a></span>
+                </li>
 
-                        <img src="../images/chicken.gif" alt="Leaf GIF" style="width: 100px; height: 100px;">
-                    </div>-->
-                    
-                    <div class="social-icons" style="margin-top: 320px;">
-                        <a href="mailto:ritvika780@gmail.com"><img src="../images/email.png" alt="Gmail" class="social-icon"></a>
-                        <a href="https://telegram.org" target="_blank"><img src="../images/telegram.png" alt="Telegram" class="social-icon"></a>
+                <li class="blog-item">
+                    <span class="blog-date">2025-09-15</span>
+                    <span class="blog-title"><a
+                            href="https://medium.com/@ritvika780/how-to-build-a-hot-or-not-for-github-48f22e562ab4?source=rss-043a4f41b145------2"
+                            target="_blank">How to build a ‘Hot or Not’ for GitHub</a></span>
+                </li>
 
-                        <a href="https://leetcode.com/u/magic_bubblez/" target="_blank"><img src="../images/leetcode.png" alt="LeetCode" class="social-icon"></a>
-                        <a href="https://github.com/magic-bubblez" target="_blank"><img src="../images/github.png" alt="GitHub" class="social-icon"></a>
-                    </div>
-                    <p class="copyright-text">
-                        © magicBubblez by Ritvika Mishra. All rights reserved.
-                    </p>
-                </div>
-            </div>
+                <li class="blog-item">
+                    <span class="blog-date">2025-06-25</span>
+                    <span class="blog-title"><a
+                            href="https://medium.com/@ritvika780/sweet-little-things-118cadc06cab?source=rss-043a4f41b145------2"
+                            target="_blank">Sweet little things…</a></span>
+                </li>
+
+                <li class="blog-item">
+                    <span class="blog-date">2025-06-25</span>
+                    <span class="blog-title"><a
+                            href="https://medium.com/@ritvika780/learning-money-the-right-way-rethinking-financial-education-3f762bf80e7c?source=rss-043a4f41b145------2"
+                            target="_blank">Learning Money the right way — Rethinking financial education</a></span>
+                </li>
+
+                <li class="blog-item">
+                    <span class="blog-date">2024-12-16</span>
+                    <span class="blog-title"><a
+                            href="https://medium.com/@ritvika780/a-brief-introduction-to-basic-architecture-of-linux-ef8c28bbc652?source=rss-043a4f41b145------2"
+                            target="_blank">A brief introduction to Basic architecture of Linux</a></span>
+                </li>
+
+                <!-- AUTOMATED_BLOGS_END -->
+            </ul>
         </main>
+
+        <footer>
+            <p>© Ritvika Mishra</p>
+        </footer>
     </div>
 </body>
+
 </html>
